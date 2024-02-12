@@ -11,7 +11,9 @@ const IndexPage = () => {
         <button
           onClick={e => {
             e.preventDefault();
-            signIn('google', { callbackUrl: 'http://localhost:3000/todo' });
+            signIn('google', {
+              callbackUrl: 'https://todo-nu-sand.vercel.app/todo'
+            });
           }}
         >
           Sign In
